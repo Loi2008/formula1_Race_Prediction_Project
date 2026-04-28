@@ -1,0 +1,4 @@
+predicted_podium_position,season,round,race_name,driver_id,driver_code,given_name,family_name,constructor_name,grid,quali_position,top3_probability
+1,2025,1,Australian Grand Prix,max_verstappen,VER,Max,Verstappen,Red Bull,3,3.0,0.855
+2,2025,1,Australian Grand Prix,norris,NOR,Lando,Norris,McLaren,1,1.0,0.545
+3,2025,1,Australian Grand Prix,piastri,PIA,Oscar,Piastri,McLaren,2,2.0,0.43

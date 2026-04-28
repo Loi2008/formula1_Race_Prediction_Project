@@ -1,0 +1,19 @@
+{
+  "target": "is_winner",
+  "test_season": 2025,
+  "model_path": "artifacts\\best_is_winner_model.pkl",
+  "accuracy": 0.9,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1_score": 0.0,
+  "confusion_matrix": [
+    [
+      27,
+      1
+    ],
+    [
+      2,
+      0
+    ]
+  ]
+}

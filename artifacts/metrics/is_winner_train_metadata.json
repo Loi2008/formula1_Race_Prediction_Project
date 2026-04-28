@@ -1,0 +1,19 @@
+{
+  "target": "is_winner",
+  "best_model": "logistic_regression",
+  "test_season": 2025,
+  "model_ranking": [
+    {
+      "model": "logistic_regression",
+      "f1_score": 0.0
+    },
+    {
+      "model": "random_forest",
+      "f1_score": 0.0
+    },
+    {
+      "model": "xgboost",
+      "f1_score": 0.0
+    }
+  ]
+}

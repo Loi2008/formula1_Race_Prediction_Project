@@ -1,0 +1,33 @@
+# Core data handling
+pandas
+numpy
+
+# API requests
+requests
+
+# FastF1 (F1 data)
+fastf1
+
+# Database
+psycopg2-binary
+sqlalchemy
+
+# Machine Learning
+scikit-learn
+xgboost
+
+# Visualization
+matplotlib
+seaborn
+
+# App deployment
+streamlit
+
+# Config handling
+pyyaml
+
+# Utilities
+tqdm
+
+# optional
+pyarrow

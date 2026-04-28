@@ -1,0 +1,9 @@
+{
+  "target": "points",
+  "best_model": "random_forest_regressor",
+  "selection_metric": "rmse",
+  "test_season": 2025,
+  "best_rmse": 4.925350038443513,
+  "best_mae": 3.863232196969697,
+  "best_r2_score": 0.57635117779657
+}

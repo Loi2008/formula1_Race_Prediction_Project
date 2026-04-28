@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Large raw data (keep processed small files only)
+data/raw/*
+!data/raw/.gitkeep
+
+# Large raw data (keep processed small files only)
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/model_table.csv
+

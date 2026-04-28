@@ -1,0 +1,19 @@
+{
+  "target": "is_top3",
+  "best_model": "random_forest",
+  "test_season": 2025,
+  "model_ranking": [
+    {
+      "model": "logistic_regression",
+      "f1_score": 0.7142857142857143
+    },
+    {
+      "model": "random_forest",
+      "f1_score": 0.8333333333333334
+    },
+    {
+      "model": "xgboost",
+      "f1_score": 0.7142857142857143
+    }
+  ]
+}

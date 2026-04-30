@@ -379,8 +379,10 @@ def get_available_historical_races(model_table: pd.DataFrame) -> pd.DataFrame:
         .reset_index(drop=True)
     )
 
-
 def get_available_future_rounds(openf1_meetings: pd.DataFrame, season: int) -> list[int]:
+    if openf1_meetings.empty or "year" not in openf1_meetings.columns:
+        return []
+
     season_df = openf1_meetings[openf1_meetings["year"] == season].copy()
 
     if season_df.empty:
@@ -393,6 +395,9 @@ def get_available_future_rounds(openf1_meetings: pd.DataFrame, season: int) -> l
 
 
 def get_future_round_labels(openf1_meetings: pd.DataFrame, season: int) -> dict[int, str]:
+    if openf1_meetings.empty or "year" not in openf1_meetings.columns:
+        return {}
+
     season_df = openf1_meetings[openf1_meetings["year"] == season].copy()
 
     if season_df.empty:

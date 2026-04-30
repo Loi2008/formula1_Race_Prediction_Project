@@ -569,7 +569,43 @@ def main():
     st.sidebar.markdown("---")
     st.sidebar.write("Use the tabs on the home page to switch between 2025 and 2026 predictions.")
 
-    tab_2025, tab_2026 = st.tabs(["🏁 2025 Prediction", "🔮 2026 Prediction"])
+    tab_home, tab_2025, tab_2026 = st.tabs(
+    ["🏠 Home", "🏁 2025 Prediction", "🔮 2026 Prediction"]
+    )
+
+    with tab_home:
+        st.markdown(
+        """
+        <div style="text-align: center; padding: 30px 10px;">
+            <h1 style="font-size: 60px;">🏎️ Formula 1 Race Prediction App</h1>
+            <p style="font-size: 26px;">
+                A production-style Formula 1 prediction application for race outcomes,
+                podium probability, winner probability, and predicted points.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.image(
+        "https://images.unsplash.com/photo-1504707748692-419802cf939d",
+        caption="Formula 1 race car",
+        use_container_width=True
+    )
+
+    st.markdown(
+        """
+        ### What this app does
+
+        - Predicts **2025 race outcomes** using historical race data
+        - Predicts **upcoming 2026 races** using a future feature pipeline
+        - Estimates **Top-3 probability**
+        - Estimates **winner probability**
+        - Predicts **race points**
+        """
+    )
+
+    st.info("Choose the 2025 or 2026 tab above to view predictions.")
 
     with tab_2025:
         render_2025_tab(

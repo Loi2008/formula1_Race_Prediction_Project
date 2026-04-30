@@ -411,18 +411,135 @@ def get_future_round_labels(openf1_meetings: pd.DataFrame, season: int) -> dict[
     return labels
 
 
+def render_2025_tab(
+    model_table,
+    top3_model,
+    winner_model,
+    points_model,
+    probability_view,
+):
+    st.header("🏁 2025 Race Prediction")
+    st.write("Analyze completed 2025 races and compare predictions with actual results.")
+
+    historical_races = get_available_historical_races(model_table)
+    historical_races = historical_races[historical_races["season"] == 2025].copy()
+
+    if historical_races.empty:
+        st.warning("No 2025 race data found.")
+        return
+
+    race_options = {
+        int(row["round"]): f"Round {int(row['round'])} - {row['race_name']}"
+        for _, row in historical_races.iterrows()
+    }
+
+    selected_round_2025 = st.selectbox(
+        "Select 2025 Race",
+        list(race_options.keys()),
+        format_func=lambda x: race_options[x],
+        key="race_2025"
+    )
+
+    race_df = model_table[
+        (model_table["season"] == 2025)
+        & (model_table["round"] == selected_round_2025)
+    ].copy()
+
+    if race_df.empty:
+        st.warning("No historical data found for the selected 2025 race.")
+        return
+
+    ranked_df = score_dataframe(
+        race_df,
+        model_table,
+        top3_model,
+        winner_model,
+        points_model,
+    )
+
+    show_prediction_outputs(
+        ranked_df,
+        probability_view=probability_view,
+        historical=True
+    )
+
+
+def render_2026_tab(
+    model_table,
+    openf1_meetings,
+    top3_model,
+    winner_model,
+    points_model,
+    probability_view,
+):
+    st.header("🔮 2026 Upcoming Race Prediction")
+    st.write("Predict upcoming 2026 races using the future feature pipeline.")
+
+    selected_season = 2026
+    available_rounds = get_available_future_rounds(
+        openf1_meetings,
+        selected_season
+    )
+    round_labels = get_future_round_labels(
+        openf1_meetings,
+        selected_season
+    )
+
+    if not available_rounds:
+        st.warning("No 2026 meetings found in openf1_meetings.csv.")
+        return
+
+    selected_round_2026 = st.selectbox(
+        "Select 2026 Race",
+        available_rounds,
+        format_func=lambda x: f"Round {x} - {round_labels.get(x, f'Round {x}')}",
+        key="race_2026"
+    )
+
+    try:
+        future_df = load_or_build_future_feature_file(
+            selected_season,
+            selected_round_2026
+        )
+    except Exception as e:
+        st.error(f"Could not build or load future features: {e}")
+        return
+
+    ranked_df = score_dataframe(
+        future_df,
+        model_table,
+        top3_model,
+        winner_model,
+        points_model,
+    )
+
+    show_prediction_outputs(
+        ranked_df,
+        probability_view=probability_view,
+        historical=False
+    )
+
+    st.info(
+        """
+        2026 predictions are based on the future feature pipeline.
+        If a future feature file does not exist, the app builds it automatically.
+
+        Current predictions mainly use:
+        - historical driver form
+        - team performance
+        - track history
+        - last known qualifying/grid proxies
+        """
+    )
+
+
 def main():
     st.title("🏎️ Formula 1 Race Prediction App")
 
     st.markdown(
         """
-        This app supports:
-
-        - **Historical race analysis**
-        - **Upcoming 2026 race prediction**
-        - **Top-3 probability prediction**
-        - **Winner probability prediction**
-        - **Predicted points regression**
+        A production-style Formula 1 prediction application for race outcomes,
+        podium probability, winner probability, and predicted points.
         """
     )
 
@@ -436,126 +553,33 @@ def main():
         st.error(f"Startup error: {e}")
         st.stop()
 
-    mode = st.sidebar.radio(
-        "Select Mode",
-        ["Historical Race Analysis", "Upcoming 2026 Race Prediction"]
-    )
-
     probability_view = st.sidebar.radio(
         "Probability View",
         ["Top 3 Probability", "Winner Probability"]
     )
 
-    if mode == "Historical Race Analysis":
-        st.sidebar.markdown("## Historical Race Selection")
+    st.sidebar.markdown("---")
+    st.sidebar.write("Use the tabs on the home page to switch between 2025 and 2026 predictions.")
 
-        historical_races = get_available_historical_races(model_table)
-        seasons = sorted(historical_races["season"].dropna().astype(int).unique().tolist())
+    tab_2025, tab_2026 = st.tabs(["🏁 2025 Prediction", "🔮 2026 Prediction"])
 
-        selected_season = st.sidebar.selectbox(
-            "Season",
-            seasons,
-            index=len(seasons) - 1
-        )
-
-        season_races = historical_races[
-            historical_races["season"] == selected_season
-        ].copy()
-
-        race_options = {
-            int(row["round"]): f"Round {int(row['round'])} - {row['race_name']}"
-            for _, row in season_races.iterrows()
-        }
-
-        selected_round = st.sidebar.selectbox(
-            "Round",
-            list(race_options.keys()),
-            format_func=lambda x: race_options[x]
-        )
-
-        race_df = model_table[
-            (model_table["season"] == selected_season)
-            & (model_table["round"] == selected_round)
-        ].copy()
-
-        if race_df.empty:
-            st.warning("No historical data found for the selected race.")
-            st.stop()
-
-        ranked_df = score_dataframe(
-            race_df,
-            model_table,
-            top3_model,
-            winner_model,
-            points_model,
-        )
-
-        show_prediction_outputs(
-            ranked_df,
+    with tab_2025:
+        render_2025_tab(
+            model_table=model_table,
+            top3_model=top3_model,
+            winner_model=winner_model,
+            points_model=points_model,
             probability_view=probability_view,
-            historical=True
         )
 
-    else:
-        st.sidebar.markdown("## Upcoming 2026 Race Selection")
-
-        selected_season = 2026
-        available_rounds = get_available_future_rounds(
-            openf1_meetings,
-            selected_season
-        )
-        round_labels = get_future_round_labels(
-            openf1_meetings,
-            selected_season
-        )
-
-        if not available_rounds:
-            st.warning("No upcoming 2026 meetings found in openf1_meetings.csv.")
-            st.stop()
-
-        selected_round = st.sidebar.selectbox(
-            "Upcoming Round",
-            available_rounds,
-            format_func=lambda x: f"Round {x} - {round_labels.get(x, f'Round {x}')}"
-        )
-
-        try:
-            future_df = load_or_build_future_feature_file(
-                selected_season,
-                selected_round
-            )
-        except Exception as e:
-            st.error(f"Could not build or load future features: {e}")
-            st.stop()
-
-        ranked_df = score_dataframe(
-            future_df,
-            model_table,
-            top3_model,
-            winner_model,
-            points_model,
-        )
-
-        show_prediction_outputs(
-            ranked_df,
+    with tab_2026:
+        render_2026_tab(
+            model_table=model_table,
+            openf1_meetings=openf1_meetings,
+            top3_model=top3_model,
+            winner_model=winner_model,
+            points_model=points_model,
             probability_view=probability_view,
-            historical=False
-        )
-
-        st.markdown("### ℹ️ Notes for Upcoming Predictions")
-        st.write(
-            """
-            These predictions are based on the **future feature pipeline**.
-            If the future feature file does not already exist, the app builds it automatically.
-
-            Current upcoming-race predictions are based mainly on:
-            - historical driver form
-            - team performance
-            - track history
-            - last known qualifying/grid proxies
-
-            This can later be improved by adding actual qualifying and practice-session features.
-            """
         )
 
 

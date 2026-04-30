@@ -1,0 +1,151 @@
+season,round,race_name,driver_id,driver_code,driver_number,given_name,family_name,date_of_birth,nationality,constructor_id,constructor_name,constructor_nationality,grid,finish_position,position_text,points,laps,status,finish_time_ms,finish_time_text,fastest_lap_rank,fastest_lap_number,fastest_lap_time,fastest_lap_avg_speed,fastest_lap_speed_units
+2021,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,2,1,1,25,56,Finished,5523897.0,1:32:03.897,4.0,44.0,1:34.015,207.235,kph
+2021,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,1,2,2,18,56,Finished,5524642.0,+0.745,2.0,41.0,1:33.228,208.984,kph
+2021,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,1989-08-28,Finnish,mercedes,Mercedes,German,3,3,3,16,56,Finished,5561280.0,+37.383,1.0,56.0,1:32.090,211.566,kph
+2021,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,7,4,4,12,56,Finished,5570363.0,+46.466,6.0,38.0,1:34.396,206.398,kph
+2021,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,1990-01-26,Mexican,red_bull,Red Bull,Austrian,0,5,5,10,56,Finished,5575944.0,+52.047,3.0,44.0,1:33.970,207.334,kph
+2021,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,4,6,6,8,56,Finished,5582987.0,+59.090,11.0,39.0,1:34.988,205.112,kph
+2021,1,Bahrain Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,1989-07-01,Australian,mclaren,McLaren,British,6,7,7,6,56,Finished,5589901.0,+1:06.004,10.0,36.0,1:34.932,205.233,kph
+2021,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,ferrari,Ferrari,Italian,8,8,8,4,56,Finished,5590997.0,+1:07.100,7.0,48.0,1:34.509,206.151,kph
+2021,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,2000-05-11,Japanese,alphatauri,AlphaTauri,Italian,13,9,9,2,56,Finished,5609589.0,+1:25.692,8.0,38.0,1:34.761,205.603,kph
+2021,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,1998-10-29,Canadian,aston_martin,Aston Martin,British,10,10,10,1,56,Finished,5610610.0,+1:26.713,9.0,31.0,1:34.865,205.378,kph
+2021,1,Bahrain Grand Prix,raikkonen,RAI,7,Kimi,Räikkönen,1979-10-17,Finnish,alfa,Alfa Romeo,Swiss,14,11,11,0,56,Finished,5612761.0,+1:28.864,14.0,45.0,1:35.192,204.672,kph
+2021,1,Bahrain Grand Prix,giovinazzi,GIO,99,Antonio,Giovinazzi,1993-12-14,Italian,alfa,Alfa Romeo,Swiss,12,12,12,0,55,+1 Lap,,Unknown,13.0,32.0,1:35.122,204.823,kph
+2021,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,alpine,Alpine F1 Team,French,16,13,13,0,55,+1 Lap,,Unknown,15.0,33.0,1:35.250,204.548,kph
+2021,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,williams,Williams,British,15,14,14,0,55,+1 Lap,,Unknown,12.0,40.0,1:35.036,205.008,kph
+2021,1,Bahrain Grand Prix,vettel,VET,5,Sebastian,Vettel,1987-07-03,German,aston_martin,Aston Martin,British,20,15,15,0,55,+1 Lap,,Unknown,16.0,26.0,1:35.566,203.871,kph
+2021,1,Bahrain Grand Prix,mick_schumacher,MSC,47,Mick,Schumacher,1999-03-22,German,haas,Haas F1 Team,American,18,16,16,0,55,+1 Lap,,Unknown,18.0,38.0,1:36.134,202.667,kph
+2021,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alphatauri,AlphaTauri,Italian,5,17,17,0,52,Retired,,Unknown,5.0,48.0,1:34.090,207.069,kph
+2021,1,Bahrain Grand Prix,latifi,LAT,6,Nicholas,Latifi,1995-06-29,Canadian,williams,Williams,British,17,18,18,0,51,Retired,,Unknown,19.0,16.0,1:36.602,201.685,kph
+2021,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,alpine,Alpine F1 Team,French,9,19,R,0,32,Brakes,,Unknown,17.0,31.0,1:36.063,202.816,kph
+2021,1,Bahrain Grand Prix,mazepin,MAZ,9,Nikita,Mazepin,1999-03-02,Russian,haas,Haas F1 Team,American,19,20,R,0,0,Accident,,Unknown,,,Unknown,,Unknown
+2021,2,Emilia Romagna Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,3,1,1,25,63,Finished,7354598.0,2:02:34.598,2.0,60.0,1:17.524,227.96,kph
+2021,2,Emilia Romagna Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,1,2,2,19,63,Finished,7376598.0,+22.000,1.0,60.0,1:16.702,230.403,kph
+2021,2,Emilia Romagna Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,7,3,3,15,63,Finished,7378300.0,+23.702,3.0,63.0,1:18.259,225.819,kph
+2021,2,Emilia Romagna Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,4,4,4,12,63,Finished,7380177.0,+25.579,6.0,60.0,1:18.379,225.473,kph
+2021,2,Emilia Romagna Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,ferrari,Ferrari,Italian,11,5,5,10,63,Finished,7381634.0,+27.036,7.0,60.0,1:18.490,225.154,kph
+2021,2,Emilia Romagna Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,1989-07-01,Australian,mclaren,McLaren,British,6,6,6,8,63,Finished,7405818.0,+51.220,12.0,54.0,1:19.341,222.739,kph
+2021,2,Emilia Romagna Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alphatauri,AlphaTauri,Italian,5,7,7,6,63,Finished,7407416.0,+52.818,9.0,52.0,1:18.994,223.718,kph
+2021,2,Emilia Romagna Grand Prix,stroll,STR,18,Lance,Stroll,1998-10-29,Canadian,aston_martin,Aston Martin,British,10,8,8,4,63,Finished,7411507.0,+56.909,8.0,59.0,1:18.782,224.32,kph
+2021,2,Emilia Romagna Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,alpine,Alpine F1 Team,French,9,9,9,2,63,Finished,7420302.0,+1:05.704,15.0,62.0,1:19.422,222.512,kph
+2021,2,Emilia Romagna Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,alpine,Alpine F1 Team,French,15,10,10,1,63,Finished,7421159.0,+1:06.561,14.0,62.0,1:19.417,222.526,kph
+2022,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,1,1,1,26,57,Finished,5853584.0,1:37:33.584,1.0,51.0,1:34.570,206.018,kph
+2022,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,ferrari,Ferrari,Italian,3,2,2,18,57,Finished,5859182.0,+5.598,3.0,52.0,1:35.740,203.501,kph
+2022,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,5,3,3,15,57,Finished,5863259.0,+9.675,5.0,53.0,1:36.228,202.469,kph
+2022,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,9,4,4,12,57,Finished,5864795.0,+11.211,6.0,56.0,1:36.302,202.313,kph
+2022,1,Bahrain Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,1992-10-05,Danish,haas,Haas F1 Team,American,7,5,5,10,57,Finished,5868338.0,+14.754,8.0,53.0,1:36.623,201.641,kph
+2022,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,1989-08-28,Finnish,alfa,Alfa Romeo,Swiss,6,6,6,8,57,Finished,5869703.0,+16.119,7.0,53.0,1:36.599,201.691,kph
+2022,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,alpine,Alpine F1 Team,French,11,7,7,6,57,Finished,5873007.0,+19.423,14.0,53.0,1:37.110,200.63,kph
+2022,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,2000-05-11,Japanese,alphatauri,AlphaTauri,Italian,16,8,8,4,57,Finished,5873970.0,+20.386,13.0,53.0,1:37.104,200.642,kph
+2022,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,alpine,Alpine F1 Team,French,8,9,9,2,57,Finished,5875974.0,+22.390,10.0,44.0,1:36.733,201.412,kph
+2022,1,Bahrain Grand Prix,zhou,ZHO,24,Guanyu,Zhou,1999-05-30,Chinese,alfa,Alfa Romeo,Swiss,15,10,10,1,57,Finished,5876648.0,+23.064,9.0,39.0,1:36.685,201.512,kph
+2022,1,Bahrain Grand Prix,mick_schumacher,MSC,47,Mick,Schumacher,1999-03-22,German,haas,Haas F1 Team,American,12,11,11,0,57,Finished,5886158.0,+32.574,11.0,37.0,1:36.956,200.948,kph
+2022,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,1998-10-29,Canadian,aston_martin,Aston Martin,British,19,12,12,0,57,Finished,5899457.0,+45.873,15.0,49.0,1:37.146,200.555,kph
+2022,1,Bahrain Grand Prix,albon,ALB,23,Alexander,Albon,1996-03-23,Thai,williams,Williams,British,14,13,13,0,57,Finished,5907516.0,+53.932,18.0,50.0,1:37.355,200.125,kph
+2022,1,Bahrain Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,1989-07-01,Australian,mclaren,McLaren,British,18,14,14,0,57,Finished,5908559.0,+54.975,16.0,50.0,1:37.261,200.318,kph
+2022,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,13,15,15,0,57,Finished,5909919.0,+56.335,12.0,51.0,1:36.988,200.882,kph
+2022,1,Bahrain Grand Prix,latifi,LAT,6,Nicholas,Latifi,1995-06-29,Canadian,williams,Williams,British,20,16,16,0,57,Finished,5915379.0,+1:01.795,20.0,51.0,1:38.251,198.3,kph
+2022,1,Bahrain Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,1987-08-19,German,aston_martin,Aston Martin,British,17,17,17,0,57,Finished,5917413.0,+1:03.829,19.0,49.0,1:38.201,198.401,kph
+2022,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,1990-01-26,Mexican,red_bull,Red Bull,Austrian,4,18,18,0,56,Fuel pressure,,Unknown,4.0,52.0,1:36.089,202.762,kph
+2022,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,2,19,19,0,54,Fuel pressure,,Unknown,2.0,51.0,1:35.440,204.14,kph
+2022,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alphatauri,AlphaTauri,Italian,10,20,R,0,44,Power Unit,,Unknown,17.0,34.0,1:37.324,200.189,kph
+2022,2,Saudi Arabian Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,4,1,1,25,50,Finished,5059293.0,1:24:19.293,2.0,50.0,1:31.772,242.191,kph
+2022,2,Saudi Arabian Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,2,2,2,19,50,Finished,5059842.0,+0.549,1.0,48.0,1:31.634,242.556,kph
+2022,2,Saudi Arabian Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,ferrari,Ferrari,Italian,3,3,3,15,50,Finished,5067390.0,+8.097,3.0,48.0,1:31.905,241.841,kph
+2022,2,Saudi Arabian Grand Prix,perez,PER,11,Sergio,Pérez,1990-01-26,Mexican,red_bull,Red Bull,Austrian,1,4,4,12,50,Finished,5070093.0,+10.800,4.0,46.0,1:32.042,241.481,kph
+2022,2,Saudi Arabian Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,6,5,5,10,50,Finished,5092025.0,+32.732,7.0,43.0,1:32.821,239.454,kph
+2022,2,Saudi Arabian Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,alpine,Alpine F1 Team,French,5,6,6,8,50,Finished,5115310.0,+56.017,9.0,46.0,1:33.103,238.729,kph
+2022,2,Saudi Arabian Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,11,7,7,6,50,Finished,5115417.0,+56.124,5.0,46.0,1:32.753,239.629,kph
+2022,2,Saudi Arabian Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alphatauri,AlphaTauri,Italian,9,8,8,4,50,Finished,5122239.0,+1:02.946,10.0,42.0,1:33.468,237.796,kph
+2022,2,Saudi Arabian Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,1992-10-05,Danish,haas,Haas F1 Team,American,10,9,9,2,50,Finished,5123601.0,+1:04.308,6.0,48.0,1:32.779,239.562,kph
+2022,2,Saudi Arabian Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,15,10,10,1,50,Finished,5133241.0,+1:13.948,8.0,47.0,1:32.997,239.001,kph
+2023,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,1,1,1,25,57,Finished,5636736.0,1:33:56.736,6.0,44.0,1:36.236,202.452,kph
+2023,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,1990-01-26,Mexican,red_bull,Red Bull,Austrian,2,2,2,18,57,Finished,5648723.0,+11.987,7.0,37.0,1:36.344,202.225,kph
+2023,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,aston_martin,Aston Martin,British,5,3,3,15,57,Finished,5675373.0,+38.637,5.0,36.0,1:36.156,202.62,kph
+2023,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,ferrari,Ferrari,Italian,4,4,4,12,57,Finished,5684788.0,+48.052,14.0,37.0,1:37.130,200.588,kph
+2023,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,7,5,5,10,57,Finished,5687713.0,+50.977,10.0,36.0,1:36.546,201.802,kph
+2023,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,1998-10-29,Canadian,aston_martin,Aston Martin,British,8,6,6,8,57,Finished,5691238.0,+54.502,9.0,32.0,1:36.546,201.802,kph
+2023,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,6,7,7,6,57,Finished,5692609.0,+55.873,17.0,33.0,1:37.221,200.401,kph
+2023,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,1989-08-28,Finnish,alfa,Alfa Romeo,Swiss,12,8,8,4,57,Finished,5709383.0,+1:12.647,18.0,31.0,1:37.379,200.075,kph
+2023,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alpine,Alpine F1 Team,French,20,9,9,2,57,Finished,5710489.0,+1:13.753,2.0,42.0,1:35.068,204.939,kph
+2023,1,Bahrain Grand Prix,albon,ALB,23,Alexander,Albon,1996-03-23,Thai,williams,Williams,British,15,10,10,1,57,Finished,5726510.0,+1:29.774,15.0,43.0,1:37.144,200.559,kph
+2023,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,2000-05-11,Japanese,alphatauri,AlphaTauri,Italian,14,11,11,0,57,Finished,5727606.0,+1:30.870,12.0,42.0,1:36.637,201.612,kph
+2023,1,Bahrain Grand Prix,sargeant,SAR,2,Logan,Sargeant,2000-12-31,American,williams,Williams,British,16,12,12,0,56,Lapped,5637872.0,+1.136,4.0,42.0,1:36.037,202.871,kph
+2023,1,Bahrain Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,1992-10-05,Danish,haas,Haas F1 Team,American,17,13,13,0,56,Lapped,5653493.0,+16.757,8.0,42.0,1:36.471,201.959,kph
+2023,1,Bahrain Grand Prix,de_vries,DEV,21,Nyck,de Vries,1995-02-06,Dutch,alphatauri,AlphaTauri,Italian,19,14,14,0,56,Lapped,5659259.0,+22.523,19.0,30.0,1:37.709,199.4,kph
+2023,1,Bahrain Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,1987-08-19,German,haas,Haas F1 Team,American,10,15,15,0,56,Lapped,5675647.0,+38.911,11.0,42.0,1:36.616,201.656,kph
+2023,1,Bahrain Grand Prix,zhou,ZHO,24,Guanyu,Zhou,1999-05-30,Chinese,alfa,Alfa Romeo,Swiss,13,16,16,0,56,Lapped,5676385.0,+39.649,1.0,56.0,1:33.996,207.276,kph
+2023,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,11,17,17,0,55,Lapped,5643372.0,+6.636,3.0,51.0,1:35.822,203.327,kph
+2023,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,alpine,Alpine F1 Team,French,9,18,R,0,41,Retired,,Unknown,13.0,34.0,1:36.797,201.278,kph
+2023,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,3,19,R,0,39,Retired,,Unknown,16.0,37.0,1:37.170,200.506,kph
+2023,1,Bahrain Grand Prix,piastri,PIA,81,Oscar,Piastri,2001-04-06,Australian,mclaren,McLaren,British,18,20,R,0,13,Retired,,Unknown,20.0,3.0,1:40.691,193.494,kph
+2023,2,Saudi Arabian Grand Prix,perez,PER,11,Sergio,Pérez,1990-01-26,Mexican,red_bull,Red Bull,Austrian,1,1,1,25,50,Finished,4874894.0,1:21:14.894,2.0,38.0,1:32.188,241.098,kph
+2023,2,Saudi Arabian Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,15,2,2,19,50,Finished,4880249.0,+5.355,1.0,50.0,1:31.906,241.838,kph
+2023,2,Saudi Arabian Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,aston_martin,Aston Martin,British,2,3,3,15,50,Finished,4895622.0,+20.728,3.0,50.0,1:32.240,240.962,kph
+2023,2,Saudi Arabian Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,3,4,4,12,50,Finished,4900760.0,+25.866,4.0,50.0,1:32.433,240.459,kph
+2023,2,Saudi Arabian Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,7,5,5,10,50,Finished,4905959.0,+31.065,6.0,47.0,1:32.941,239.145,kph
+2023,2,Saudi Arabian Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,ferrari,Ferrari,Italian,4,6,6,8,50,Finished,4910770.0,+35.876,5.0,50.0,1:32.822,239.451,kph
+2023,2,Saudi Arabian Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,12,7,7,6,50,Finished,4918056.0,+43.162,7.0,47.0,1:33.056,238.849,kph
+2023,2,Saudi Arabian Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,alpine,Alpine F1 Team,French,6,8,8,4,50,Finished,4927726.0,+52.832,8.0,49.0,1:33.222,238.424,kph
+2023,2,Saudi Arabian Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alpine,Alpine F1 Team,French,9,9,9,2,50,Finished,4929641.0,+54.747,10.0,50.0,1:33.392,237.99,kph
+2023,2,Saudi Arabian Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,1992-10-05,Danish,haas,Haas F1 Team,American,13,10,10,1,50,Finished,4939720.0,+1:04.826,9.0,44.0,1:33.374,238.036,kph
+2024,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,1,1,1,26,57,Finished,5504742.0,1:31:44.742,1.0,39.0,1:32.608,210.383,kph
+2024,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,1990-01-26,Mexican,red_bull,Red Bull,Austrian,5,2,2,18,57,Finished,5527199.0,+22.457,4.0,40.0,1:34.364,206.468,kph
+2024,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,ferrari,Ferrari,Italian,4,3,3,15,57,Finished,5529852.0,+25.110,6.0,44.0,1:34.507,206.156,kph
+2024,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,2,4,4,12,57,Finished,5544411.0,+39.669,2.0,36.0,1:34.090,207.069,kph
+2024,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,3,5,5,10,57,Finished,5551530.0,+46.788,12.0,40.0,1:35.065,204.946,kph
+2024,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,7,6,6,8,57,Finished,5553200.0,+48.458,5.0,35.0,1:34.476,,Unknown
+2024,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,9,7,7,6,57,Finished,5555066.0,+50.324,7.0,39.0,1:34.722,205.688,kph
+2024,1,Bahrain Grand Prix,piastri,PIA,81,Oscar,Piastri,2001-04-06,Australian,mclaren,McLaren,British,8,8,8,4,57,Finished,5560824.0,+56.082,11.0,39.0,1:34.983,,Unknown
+2024,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,aston_martin,Aston Martin,British,6,9,9,2,57,Finished,5579629.0,+1:14.887,3.0,48.0,1:34.199,206.83,kph
+2024,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,1998-10-29,Canadian,aston_martin,Aston Martin,British,12,10,10,1,57,Finished,5597958.0,+1:33.216,16.0,30.0,1:35.632,203.73,kph
+2024,1,Bahrain Grand Prix,zhou,ZHO,24,Guanyu,Zhou,1999-05-30,Chinese,sauber,Sauber,Swiss,17,11,11,0,56,Lapped,5511501.0,+6.759,14.0,30.0,1:35.458,204.102,kph
+2024,1,Bahrain Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,1992-10-05,Danish,haas,Haas F1 Team,American,15,12,12,0,56,Lapped,5513058.0,+8.316,15.0,34.0,1:35.570,203.863,kph
+2024,1,Bahrain Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,1989-07-01,Australian,rb,RB F1 Team,Italian,14,13,13,0,56,Lapped,5513700.0,+8.958,13.0,37.0,1:35.163,204.735,kph
+2024,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,2000-05-11,Japanese,rb,RB F1 Team,Italian,11,14,14,0,56,Lapped,5514224.0,+9.482,18.0,37.0,1:35.833,203.303,kph
+2024,1,Bahrain Grand Prix,albon,ALB,23,Alexander,Albon,1996-03-23,Thai,williams,Williams,British,13,15,15,0,56,Lapped,5516628.0,+11.886,17.0,40.0,1:35.723,203.537,kph
+2024,1,Bahrain Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,1987-08-19,German,haas,Haas F1 Team,American,10,16,16,0,56,Lapped,5522374.0,+17.632,10.0,46.0,1:34.834,205.445,kph
+2024,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,alpine,Alpine F1 Team,French,19,17,17,0,56,Lapped,5536192.0,+31.450,20.0,34.0,1:36.226,202.473,kph
+2024,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alpine,Alpine F1 Team,French,20,18,18,0,56,Lapped,5537159.0,+32.417,9.0,45.0,1:34.805,205.508,kph
+2024,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,1989-08-28,Finnish,sauber,Sauber,Swiss,16,19,19,0,56,Lapped,5587972.0,+1:23.230,19.0,33.0,1:36.202,202.523,kph
+2024,1,Bahrain Grand Prix,sargeant,SAR,2,Logan,Sargeant,2000-12-31,American,williams,Williams,British,18,20,20,0,55,Lapped,5525537.0,+20.795,8.0,42.0,1:34.735,205.659,kph
+2024,2,Saudi Arabian Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,1,1,1,25,50,Finished,4843273.0,1:20:43.273,3.0,50.0,1:31.773,242.188,kph
+2024,2,Saudi Arabian Grand Prix,perez,PER,11,Sergio,Pérez,1990-01-26,Mexican,red_bull,Red Bull,Austrian,3,2,2,18,50,Finished,4856916.0,+13.643,8.0,37.0,1:32.273,240.876,kph
+2024,2,Saudi Arabian Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,2,3,3,16,50,Finished,4861912.0,+18.639,1.0,50.0,1:31.632,242.561,kph
+2024,2,Saudi Arabian Grand Prix,piastri,PIA,81,Oscar,Piastri,2001-04-06,Australian,mclaren,McLaren,British,5,4,4,12,50,Finished,4875280.0,+32.007,10.0,45.0,1:32.310,,Unknown
+2024,2,Saudi Arabian Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,aston_martin,Aston Martin,British,4,5,5,10,50,Finished,4879032.0,+35.759,13.0,43.0,1:32.387,240.579,kph
+2024,2,Saudi Arabian Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,7,6,6,8,50,Finished,4883209.0,+39.936,7.0,42.0,1:32.254,240.926,kph
+2024,2,Saudi Arabian Grand Prix,bearman,BEA,87,Oliver,Bearman,2005-05-08,British,ferrari,Ferrari,Italian,11,7,7,6,50,Finished,4885952.0,+42.679,5.0,50.0,1:32.186,241.103,kph
+2024,2,Saudi Arabian Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,6,8,8,4,50,Finished,4888981.0,+45.708,4.0,40.0,1:31.944,,Unknown
+2024,2,Saudi Arabian Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,mercedes,Mercedes,German,8,9,9,2,50,Finished,4890664.0,+47.391,2.0,38.0,1:31.746,242.26,kph
+2024,2,Saudi Arabian Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,1987-08-19,German,haas,Haas F1 Team,American,15,10,10,1,50,Finished,4920269.0,+1:16.996,12.0,49.0,1:32.366,240.633,kph
+2025,1,Australian Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,1,1,1,25,57,Finished,6126304.0,1:42:06.304,1.0,43.0,1:22.167,,Unknown
+2025,1,Australian Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,3,2,2,18,57,Finished,6127199.0,+0.895,3.0,43.0,1:23.081,,Unknown
+2025,1,Australian Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,4,3,3,15,57,Finished,6134785.0,+8.481,11.0,43.0,1:25.065,,Unknown
+2025,1,Australian Grand Prix,antonelli,ANT,12,Andrea Kimi,Antonelli,2006-08-25,Italian,mercedes,Mercedes,German,16,4,4,12,57,Finished,6136439.0,+10.135,9.0,43.0,1:24.901,,Unknown
+2025,1,Australian Grand Prix,albon,ALB,23,Alexander,Albon,1996-03-23,Thai,williams,Williams,British,6,5,5,10,57,Finished,6139077.0,+12.773,8.0,43.0,1:24.597,,Unknown
+2025,1,Australian Grand Prix,stroll,STR,18,Lance,Stroll,1998-10-29,Canadian,aston_martin,Aston Martin,British,13,6,6,8,57,Finished,6143717.0,+17.413,14.0,43.0,1:25.538,,Unknown
+2025,1,Australian Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,1987-08-19,German,sauber,Sauber,Swiss,17,7,7,6,57,Finished,6144727.0,+18.423,12.0,43.0,1:25.243,,Unknown
+2025,1,Australian Grand Prix,leclerc,LEC,16,Charles,Leclerc,1997-10-16,Monegasque,ferrari,Ferrari,Italian,7,8,8,4,57,Finished,6146130.0,+19.826,13.0,43.0,1:25.271,,Unknown
+2025,1,Australian Grand Prix,piastri,PIA,81,Oscar,Piastri,2001-04-06,Australian,mclaren,McLaren,British,2,9,9,2,57,Finished,6146752.0,+20.448,4.0,43.0,1:23.242,,Unknown
+2025,1,Australian Grand Prix,hamilton,HAM,44,Lewis,Hamilton,1985-01-07,British,ferrari,Ferrari,Italian,8,10,10,1,57,Finished,6148777.0,+22.473,7.0,43.0,1:24.218,,Unknown
+2025,1,Australian Grand Prix,gasly,GAS,10,Pierre,Gasly,1996-02-07,French,alpine,Alpine F1 Team,French,9,11,11,0,57,Finished,6152806.0,+26.502,10.0,43.0,1:25.020,,Unknown
+2025,1,Australian Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,2000-05-11,Japanese,rb,RB F1 Team,Italian,5,12,12,0,57,Finished,6156188.0,+29.884,6.0,43.0,1:24.194,,Unknown
+2025,1,Australian Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,haas,Haas F1 Team,American,19,13,13,0,57,Finished,6159465.0,+33.161,15.0,42.0,1:26.764,,Unknown
+2025,1,Australian Grand Prix,bearman,BEA,87,Oliver,Bearman,2005-05-08,British,haas,Haas F1 Team,American,20,14,14,0,57,Finished,6166655.0,+40.351,16.0,42.0,1:27.603,,Unknown
+2025,1,Australian Grand Prix,lawson,LAW,30,Liam,Lawson,2002-02-11,New Zealander,red_bull,Red Bull,Austrian,18,15,R,0,46,Retired,,Unknown,2.0,43.0,1:22.970,,Unknown
+2025,1,Australian Grand Prix,bortoleto,BOR,5,Gabriel,Bortoleto,2004-10-14,Brazilian,sauber,Sauber,Swiss,15,16,R,0,45,Retired,,Unknown,5.0,43.0,1:24.192,,Unknown
+2025,1,Australian Grand Prix,alonso,ALO,14,Fernando,Alonso,1981-07-29,Spanish,aston_martin,Aston Martin,British,12,17,R,0,32,Retired,,Unknown,17.0,32.0,1:28.819,,Unknown
+2025,1,Australian Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,williams,Williams,British,10,18,R,0,0,Retired,,Unknown,,,Unknown,,Unknown
+2025,1,Australian Grand Prix,doohan,DOO,7,Jack,Doohan,2003-01-20,Australian,alpine,Alpine F1 Team,French,14,19,R,0,0,Retired,,Unknown,,,Unknown,,Unknown
+2025,1,Australian Grand Prix,hadjar,HAD,6,Isack,Hadjar,2004-09-28,French,rb,RB F1 Team,Italian,11,20,R,0,0,Retired,,Unknown,,,Unknown,,Unknown
+2025,2,Chinese Grand Prix,piastri,PIA,81,Oscar,Piastri,2001-04-06,Australian,mclaren,McLaren,British,1,1,1,25,56,Finished,5455026.0,1:30:55.026,3.0,53.0,1:35.520,,Unknown
+2025,2,Chinese Grand Prix,norris,NOR,1,Lando,Norris,1999-11-13,British,mclaren,McLaren,British,3,2,2,18,56,Finished,5464774.0,+9.748,1.0,53.0,1:35.454,,Unknown
+2025,2,Chinese Grand Prix,russell,RUS,63,George,Russell,1998-02-15,British,mercedes,Mercedes,German,2,3,3,15,56,Finished,5466123.0,+11.097,5.0,55.0,1:35.816,,Unknown
+2025,2,Chinese Grand Prix,max_verstappen,VER,3,Max,Verstappen,1997-09-30,Dutch,red_bull,Red Bull,Austrian,4,4,4,12,56,Finished,5471682.0,+16.656,2.0,56.0,1:35.488,,Unknown
+2025,2,Chinese Grand Prix,ocon,OCO,31,Esteban,Ocon,1996-09-17,French,haas,Haas F1 Team,American,11,5,5,10,56,Finished,5504995.0,+49.969,4.0,56.0,1:35.740,,Unknown
+2025,2,Chinese Grand Prix,antonelli,ANT,12,Andrea Kimi,Antonelli,2006-08-25,Italian,mercedes,Mercedes,German,8,6,6,8,56,Finished,5508774.0,+53.748,11.0,56.0,1:36.046,,Unknown
+2025,2,Chinese Grand Prix,albon,ALB,23,Alexander,Albon,1996-03-23,Thai,williams,Williams,British,10,7,7,6,56,Finished,5511347.0,+56.321,12.0,52.0,1:36.254,,Unknown
+2025,2,Chinese Grand Prix,bearman,BEA,87,Oliver,Bearman,2005-05-08,British,haas,Haas F1 Team,American,17,8,8,4,56,Finished,5516329.0,+1:01.303,13.0,52.0,1:36.363,,Unknown
+2025,2,Chinese Grand Prix,stroll,STR,18,Lance,Stroll,1998-10-29,Canadian,aston_martin,Aston Martin,British,14,9,9,2,56,Finished,5525230.0,+1:10.204,10.0,39.0,1:36.044,,Unknown
+2025,2,Chinese Grand Prix,sainz,SAI,55,Carlos,Sainz,1994-09-01,Spanish,williams,Williams,British,15,10,10,1,56,Finished,5531413.0,+1:16.387,15.0,50.0,1:36.779,,Unknown

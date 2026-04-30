@@ -197,11 +197,11 @@ def get_historical_actual_podium(race_df: pd.DataFrame) -> pd.DataFrame:
         ]
     ]
 
-
 def show_prediction_outputs(
     ranked_df: pd.DataFrame,
     probability_view: str,
-    historical: bool = False
+    historical: bool = False,
+    chart_key: str = "chart_view"
 ):
     selected_prob_col = (
         "top3_probability"
@@ -339,9 +339,10 @@ def show_prediction_outputs(
     st.dataframe(ranking_display, use_container_width=True)
 
     chart_choice = st.radio(
-        "Chart View",
-        ["Top 3 Probability", "Winner Probability", "Predicted Points"],
-        horizontal=True
+    "Chart View",
+    ["Top 3 Probability", "Winner Probability", "Predicted Points"],
+    horizontal=True,
+    key=chart_key
     )
 
     if chart_choice == "Top 3 Probability":
@@ -463,9 +464,10 @@ def render_2025_tab(
     )
 
     show_prediction_outputs(
-        ranked_df,
-        probability_view=probability_view,
-        historical=True
+    ranked_df,
+    probability_view=probability_view,
+    historical=True,
+    chart_key="chart_view_2025"
     )
 
 
@@ -519,9 +521,10 @@ def render_2026_tab(
     )
 
     show_prediction_outputs(
-        ranked_df,
-        probability_view=probability_view,
-        historical=False
+    ranked_df,
+    probability_view=probability_view,
+    historical=False,
+    chart_key="chart_view_2026"
     )
 
     st.info(

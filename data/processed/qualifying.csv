@@ -1,0 +1,151 @@
+season,round,race_name,driver_id,driver_code,driver_number,given_name,family_name,constructor_id,constructor_name,quali_position,q1,q2,q3
+2021,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,1,1:30.499,1:30.318,1:28.997
+2021,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,mercedes,Mercedes,2,1:30.617,1:30.085,1:29.385
+2021,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,mercedes,Mercedes,3,1:31.200,1:30.186,1:29.586
+2021,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,4,1:30.691,1:30.010,1:29.678
+2021,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,alphatauri,AlphaTauri,5,1:30.848,1:30.513,1:29.809
+2021,1,Bahrain Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,mclaren,McLaren,6,1:30.795,1:30.222,1:29.927
+2021,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,7,1:30.902,1:30.099,1:29.974
+2021,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,ferrari,Ferrari,8,1:31.653,1:30.009,1:30.215
+2021,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,alpine,Alpine F1 Team,9,1:30.863,1:30.595,1:30.249
+2021,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,10,1:31.261,1:30.624,1:30.601
+2021,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,11,1:31.165,1:30.659,Unknown
+2021,1,Bahrain Grand Prix,giovinazzi,GIO,99,Antonio,Giovinazzi,alfa,Alfa Romeo,12,1:30.998,1:30.708,Unknown
+2021,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,alphatauri,AlphaTauri,13,1:30.607,1:31.203,Unknown
+2021,1,Bahrain Grand Prix,raikkonen,RAI,7,Kimi,Räikkönen,alfa,Alfa Romeo,14,1:31.547,1:31.238,Unknown
+2021,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,williams,Williams,15,1:31.316,1:33.430,Unknown
+2021,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,alpine,Alpine F1 Team,16,1:31.724,Unknown,Unknown
+2021,1,Bahrain Grand Prix,latifi,LAT,6,Nicholas,Latifi,williams,Williams,17,1:31.936,Unknown,Unknown
+2021,1,Bahrain Grand Prix,vettel,VET,5,Sebastian,Vettel,aston_martin,Aston Martin,18,1:32.056,Unknown,Unknown
+2021,1,Bahrain Grand Prix,mick_schumacher,MSC,47,Mick,Schumacher,haas,Haas F1 Team,19,1:32.449,Unknown,Unknown
+2021,1,Bahrain Grand Prix,mazepin,MAZ,9,Nikita,Mazepin,haas,Haas F1 Team,20,1:33.273,Unknown,Unknown
+2021,2,Emilia Romagna Grand Prix,hamilton,HAM,44,Lewis,Hamilton,mercedes,Mercedes,1,1:14.823,1:14.817,1:14.411
+2021,2,Emilia Romagna Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,2,1:15.395,1:14.716,1:14.446
+2021,2,Emilia Romagna Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,3,1:15.109,1:14.884,1:14.498
+2021,2,Emilia Romagna Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,4,1:15.413,1:14.808,1:14.740
+2021,2,Emilia Romagna Grand Prix,gasly,GAS,10,Pierre,Gasly,alphatauri,AlphaTauri,5,1:15.548,1:14.927,1:14.790
+2021,2,Emilia Romagna Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,mclaren,McLaren,6,1:15.669,1:15.033,1:14.826
+2021,2,Emilia Romagna Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,7,1:15.009,1:14.718,1:14.875
+2021,2,Emilia Romagna Grand Prix,bottas,BOT,77,Valtteri,Bottas,mercedes,Mercedes,8,1:14.672,1:14.905,1:14.898
+2021,2,Emilia Romagna Grand Prix,ocon,OCO,31,Esteban,Ocon,alpine,Alpine F1 Team,9,1:15.385,1:15.117,1:15.210
+2021,2,Emilia Romagna Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,10,1:15.522,1:15.138,Unknown
+2022,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,1,1:31.471,1:30.932,1:30.558
+2022,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,2,1:31.785,1:30.757,1:30.681
+2022,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,ferrari,Ferrari,3,1:31.567,1:30.787,1:30.687
+2022,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,4,1:32.311,1:31.008,1:30.921
+2022,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,mercedes,Mercedes,5,1:32.285,1:31.048,1:31.238
+2022,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,alfa,Alfa Romeo,6,1:31.919,1:31.717,1:31.560
+2022,1,Bahrain Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,haas,Haas F1 Team,7,1:31.955,1:31.461,1:31.808
+2022,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,alpine,Alpine F1 Team,8,1:32.346,1:31.621,1:32.195
+2022,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,9,1:32.269,1:31.252,1:32.216
+2022,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,alphatauri,AlphaTauri,10,1:32.096,1:31.635,1:32.338
+2022,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,alpine,Alpine F1 Team,11,1:32.041,1:31.782,Unknown
+2022,1,Bahrain Grand Prix,mick_schumacher,MSC,47,Mick,Schumacher,haas,Haas F1 Team,12,1:32.380,1:31.998,Unknown
+2022,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,13,1:32.239,1:32.008,Unknown
+2022,1,Bahrain Grand Prix,albon,ALB,23,Alexander,Albon,williams,Williams,14,1:32.726,1:32.664,Unknown
+2022,1,Bahrain Grand Prix,zhou,ZHO,24,Guanyu,Zhou,alfa,Alfa Romeo,15,1:32.493,1:33.543,Unknown
+2022,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,alphatauri,AlphaTauri,16,1:32.750,Unknown,Unknown
+2022,1,Bahrain Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,aston_martin,Aston Martin,17,1:32.777,Unknown,Unknown
+2022,1,Bahrain Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,mclaren,McLaren,18,1:32.945,Unknown,Unknown
+2022,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,19,1:33.032,Unknown,Unknown
+2022,1,Bahrain Grand Prix,latifi,LAT,6,Nicholas,Latifi,williams,Williams,20,1:33.634,Unknown,Unknown
+2022,2,Saudi Arabian Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,1,1:29.705,1:28.924,1:28.200
+2022,2,Saudi Arabian Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,2,1:29.039,1:28.780,1:28.225
+2022,2,Saudi Arabian Grand Prix,sainz,SAI,55,Carlos,Sainz,ferrari,Ferrari,3,1:28.855,1:28.686,1:28.402
+2022,2,Saudi Arabian Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,4,1:28.928,1:28.945,1:28.461
+2022,2,Saudi Arabian Grand Prix,ocon,OCO,31,Esteban,Ocon,alpine,Alpine F1 Team,5,1:30.093,1:29.584,1:29.068
+2022,2,Saudi Arabian Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,6,1:29.680,1:29.618,1:29.104
+2022,2,Saudi Arabian Grand Prix,alonso,ALO,14,Fernando,Alonso,alpine,Alpine F1 Team,7,1:29.978,1:29.295,1:29.147
+2022,2,Saudi Arabian Grand Prix,bottas,BOT,77,Valtteri,Bottas,alfa,Alfa Romeo,8,1:29.683,1:29.404,1:29.183
+2022,2,Saudi Arabian Grand Prix,gasly,GAS,10,Pierre,Gasly,alphatauri,AlphaTauri,9,1:29.891,1:29.418,1:29.254
+2022,2,Saudi Arabian Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,haas,Haas F1 Team,10,1:29.831,1:29.546,1:29.588
+2023,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,1,1:31.295,1:30.503,1:29.708
+2023,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,2,1:31.479,1:30.746,1:29.846
+2023,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,3,1:31.094,1:30.282,1:30.000
+2023,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,ferrari,Ferrari,4,1:30.993,1:30.515,1:30.154
+2023,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,aston_martin,Aston Martin,5,1:31.158,1:30.645,1:30.336
+2023,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,6,1:31.057,1:30.507,1:30.340
+2023,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,mercedes,Mercedes,7,1:31.543,1:30.513,1:30.384
+2023,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,8,1:31.184,1:31.127,1:30.836
+2023,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,alpine,Alpine F1 Team,9,1:31.508,1:30.914,1:30.984
+2023,1,Bahrain Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,haas,Haas F1 Team,10,1:31.204,1:30.809,Unknown
+2023,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,11,1:31.652,1:31.381,Unknown
+2023,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,alfa,Alfa Romeo,12,1:31.504,1:31.443,Unknown
+2023,1,Bahrain Grand Prix,zhou,ZHO,24,Guanyu,Zhou,alfa,Alfa Romeo,13,1:31.615,1:31.473,Unknown
+2023,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,alphatauri,AlphaTauri,14,1:31.400,1:32.510,Unknown
+2023,1,Bahrain Grand Prix,albon,ALB,23,Alexander,Albon,williams,Williams,15,1:31.461,Unknown,Unknown
+2023,1,Bahrain Grand Prix,sargeant,SAR,2,Logan,Sargeant,williams,Williams,16,1:31.652,Unknown,Unknown
+2023,1,Bahrain Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,haas,Haas F1 Team,17,1:31.892,Unknown,Unknown
+2023,1,Bahrain Grand Prix,piastri,PIA,81,Oscar,Piastri,mclaren,McLaren,18,1:32.101,Unknown,Unknown
+2023,1,Bahrain Grand Prix,de_vries,DEV,21,Nyck,de Vries,alphatauri,AlphaTauri,19,1:32.121,Unknown,Unknown
+2023,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,alpine,Alpine F1 Team,20,1:32.181,Unknown,Unknown
+2023,2,Saudi Arabian Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,1,1:29.244,1:28.635,1:28.265
+2023,2,Saudi Arabian Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,2,1:29.376,1:28.903,1:28.420
+2023,2,Saudi Arabian Grand Prix,alonso,ALO,14,Fernando,Alonso,aston_martin,Aston Martin,3,1:29.298,1:28.757,1:28.730
+2023,2,Saudi Arabian Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,4,1:29.592,1:29.132,1:28.857
+2023,2,Saudi Arabian Grand Prix,sainz,SAI,55,Carlos,Sainz,ferrari,Ferrari,5,1:29.411,1:28.957,1:28.931
+2023,2,Saudi Arabian Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,6,1:29.335,1:28.962,1:28.945
+2023,2,Saudi Arabian Grand Prix,ocon,OCO,31,Esteban,Ocon,alpine,Alpine F1 Team,7,1:29.707,1:29.255,1:29.078
+2023,2,Saudi Arabian Grand Prix,hamilton,HAM,44,Lewis,Hamilton,mercedes,Mercedes,8,1:29.689,1:29.374,1:29.223
+2023,2,Saudi Arabian Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,haas,Haas F1 Team,11,1:29.547,1:29.451,Unknown
+2023,2,Saudi Arabian Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,15,1:28.761,1:49.953,Unknown
+2024,1,Bahrain Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,1,1:30.031,1:29.374,1:29.179
+2024,1,Bahrain Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,2,1:30.243,1:29.165,1:29.407
+2024,1,Bahrain Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,3,1:30.350,1:29.922,1:29.485
+2024,1,Bahrain Grand Prix,sainz,SAI,55,Carlos,Sainz,ferrari,Ferrari,4,1:29.909,1:29.573,1:29.507
+2024,1,Bahrain Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,5,1:30.221,1:29.932,1:29.537
+2024,1,Bahrain Grand Prix,alonso,ALO,14,Fernando,Alonso,aston_martin,Aston Martin,6,1:30.179,1:29.801,1:29.542
+2024,1,Bahrain Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,7,1:30.143,1:29.941,1:29.614
+2024,1,Bahrain Grand Prix,piastri,PIA,81,Oscar,Piastri,mclaren,McLaren,8,1:30.531,1:30.122,1:29.683
+2024,1,Bahrain Grand Prix,hamilton,HAM,44,Lewis,Hamilton,mercedes,Mercedes,9,1:30.451,1:29.718,1:29.710
+2024,1,Bahrain Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,haas,Haas F1 Team,10,1:30.566,1:29.851,1:30.502
+2024,1,Bahrain Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,rb,RB F1 Team,11,1:30.481,1:30.129,Unknown
+2024,1,Bahrain Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,12,1:29.965,1:30.200,Unknown
+2024,1,Bahrain Grand Prix,albon,ALB,23,Alexander,Albon,williams,Williams,13,1:30.397,1:30.221,Unknown
+2024,1,Bahrain Grand Prix,ricciardo,RIC,3,Daniel,Ricciardo,rb,RB F1 Team,14,1:30.562,1:30.278,Unknown
+2024,1,Bahrain Grand Prix,kevin_magnussen,MAG,20,Kevin,Magnussen,haas,Haas F1 Team,15,1:30.646,1:30.529,Unknown
+2024,1,Bahrain Grand Prix,bottas,BOT,77,Valtteri,Bottas,sauber,Sauber,16,1:30.756,Unknown,Unknown
+2024,1,Bahrain Grand Prix,zhou,ZHO,24,Guanyu,Zhou,sauber,Sauber,17,1:30.757,Unknown,Unknown
+2024,1,Bahrain Grand Prix,sargeant,SAR,2,Logan,Sargeant,williams,Williams,18,1:30.770,Unknown,Unknown
+2024,1,Bahrain Grand Prix,ocon,OCO,31,Esteban,Ocon,alpine,Alpine F1 Team,19,1:30.793,Unknown,Unknown
+2024,1,Bahrain Grand Prix,gasly,GAS,10,Pierre,Gasly,alpine,Alpine F1 Team,20,1:30.948,Unknown,Unknown
+2024,2,Saudi Arabian Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,1,1:28.171,1:28.033,1:27.472
+2024,2,Saudi Arabian Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,2,1:28.318,1:28.112,1:27.791
+2024,2,Saudi Arabian Grand Prix,perez,PER,11,Sergio,Pérez,red_bull,Red Bull,3,1:28.638,1:28.467,1:27.807
+2024,2,Saudi Arabian Grand Prix,alonso,ALO,14,Fernando,Alonso,aston_martin,Aston Martin,4,1:28.706,1:28.122,1:27.846
+2024,2,Saudi Arabian Grand Prix,piastri,PIA,81,Oscar,Piastri,mclaren,McLaren,5,1:28.755,1:28.343,1:28.089
+2024,2,Saudi Arabian Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,6,1:28.805,1:28.479,1:28.132
+2024,2,Saudi Arabian Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,7,1:28.749,1:28.448,1:28.316
+2024,2,Saudi Arabian Grand Prix,hamilton,HAM,44,Lewis,Hamilton,mercedes,Mercedes,8,1:28.994,1:28.606,1:28.460
+2024,2,Saudi Arabian Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,rb,RB F1 Team,9,1:28.988,1:28.564,1:28.547
+2024,2,Saudi Arabian Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,10,1:28.250,1:28.578,1:28.572
+2025,1,Australian Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,1,1:15.912,1:15.415,1:15.096
+2025,1,Australian Grand Prix,piastri,PIA,81,Oscar,Piastri,mclaren,McLaren,2,1:16.062,1:15.468,1:15.180
+2025,1,Australian Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,3,1:16.018,1:15.565,1:15.481
+2025,1,Australian Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,4,1:15.971,1:15.798,1:15.546
+2025,1,Australian Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,rb,RB F1 Team,5,1:16.225,1:16.009,1:15.670
+2025,1,Australian Grand Prix,albon,ALB,23,Alexander,Albon,williams,Williams,6,1:16.245,1:16.017,1:15.737
+2025,1,Australian Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,7,1:16.029,1:15.827,1:15.755
+2025,1,Australian Grand Prix,hamilton,HAM,44,Lewis,Hamilton,ferrari,Ferrari,8,1:16.213,1:15.919,1:15.973
+2025,1,Australian Grand Prix,gasly,GAS,10,Pierre,Gasly,alpine,Alpine F1 Team,9,1:16.328,1:16.112,1:15.980
+2025,1,Australian Grand Prix,sainz,SAI,55,Carlos,Sainz,williams,Williams,10,1:16.360,1:15.931,1:16.062
+2025,1,Australian Grand Prix,hadjar,HAD,6,Isack,Hadjar,rb,RB F1 Team,11,1:16.354,1:16.175,Unknown
+2025,1,Australian Grand Prix,alonso,ALO,14,Fernando,Alonso,aston_martin,Aston Martin,12,1:16.288,1:16.453,Unknown
+2025,1,Australian Grand Prix,stroll,STR,18,Lance,Stroll,aston_martin,Aston Martin,13,1:16.369,1:16.483,Unknown
+2025,1,Australian Grand Prix,doohan,DOO,7,Jack,Doohan,alpine,Alpine F1 Team,14,1:16.315,1:16.863,Unknown
+2025,1,Australian Grand Prix,bortoleto,BOR,5,Gabriel,Bortoleto,sauber,Sauber,15,1:16.516,1:17.520,Unknown
+2025,1,Australian Grand Prix,antonelli,ANT,12,Andrea Kimi,Antonelli,mercedes,Mercedes,16,1:16.525,Unknown,Unknown
+2025,1,Australian Grand Prix,hulkenberg,HUL,27,Nico,Hülkenberg,sauber,Sauber,17,1:16.579,Unknown,Unknown
+2025,1,Australian Grand Prix,lawson,LAW,30,Liam,Lawson,red_bull,Red Bull,18,1:17.094,Unknown,Unknown
+2025,1,Australian Grand Prix,ocon,OCO,31,Esteban,Ocon,haas,Haas F1 Team,19,1:17.147,Unknown,Unknown
+2025,1,Australian Grand Prix,bearman,BEA,87,Oliver,Bearman,haas,Haas F1 Team,20,Unknown,Unknown,Unknown
+2025,2,Chinese Grand Prix,piastri,PIA,81,Oscar,Piastri,mclaren,McLaren,1,1:31.591,1:31.200,1:30.641
+2025,2,Chinese Grand Prix,russell,RUS,63,George,Russell,mercedes,Mercedes,2,1:31.295,1:31.307,1:30.723
+2025,2,Chinese Grand Prix,norris,NOR,1,Lando,Norris,mclaren,McLaren,3,1:30.983,1:30.787,1:30.793
+2025,2,Chinese Grand Prix,max_verstappen,VER,3,Max,Verstappen,red_bull,Red Bull,4,1:31.424,1:31.142,1:30.817
+2025,2,Chinese Grand Prix,hamilton,HAM,44,Lewis,Hamilton,ferrari,Ferrari,5,1:31.690,1:31.501,1:30.927
+2025,2,Chinese Grand Prix,leclerc,LEC,16,Charles,Leclerc,ferrari,Ferrari,6,1:31.579,1:31.450,1:31.021
+2025,2,Chinese Grand Prix,hadjar,HAD,6,Isack,Hadjar,rb,RB F1 Team,7,1:31.162,1:31.253,1:31.079
+2025,2,Chinese Grand Prix,antonelli,ANT,12,Andrea Kimi,Antonelli,mercedes,Mercedes,8,1:31.676,1:31.590,1:31.103
+2025,2,Chinese Grand Prix,tsunoda,TSU,22,Yuki,Tsunoda,rb,RB F1 Team,9,1:31.238,1:31.260,1:31.638
+2025,2,Chinese Grand Prix,albon,ALB,23,Alexander,Albon,williams,Williams,10,1:31.503,1:31.595,1:31.706

@@ -8,18 +8,22 @@ if str(PROJECT_ROOT) not in sys.path:
 import joblib
 import pandas as pd
 import streamlit as st
+import base64
+import streamlit.components.v1 as components
 
 from src.features.build_future_features import build_future_table
 
 
 PROCESSED_DIR = Path("data/processed")
 ARTIFACTS_DIR = Path("artifacts")
+ASSETS_DIR = Path("app/assets")
 
 MODEL_TABLE_PATH = PROCESSED_DIR / "model_table.csv"
 TOP3_MODEL_PATH = ARTIFACTS_DIR / "best_is_top3_model.pkl"
 WINNER_MODEL_PATH = ARTIFACTS_DIR / "best_is_winner_model.pkl"
 POINTS_MODEL_PATH = ARTIFACTS_DIR / "best_points_model.pkl"
 OPENF1_MEETINGS_PATH = PROCESSED_DIR / "openf1_meetings.csv"
+HOME_IMAGE_PATH = ASSETS_DIR / "f1_home.jpg"
 
 
 st.set_page_config(
@@ -96,7 +100,10 @@ def get_feature_columns(df: pd.DataFrame) -> list[str]:
     return [col for col in df.columns if col not in drop_cols]
 
 
-def align_feature_dtypes(future_df: pd.DataFrame, template_df: pd.DataFrame) -> pd.DataFrame:
+def align_feature_dtypes(
+    future_df: pd.DataFrame,
+    template_df: pd.DataFrame
+) -> pd.DataFrame:
     future_df = future_df.copy()
     template_feature_cols = get_feature_columns(template_df)
 
@@ -154,7 +161,10 @@ def future_feature_path(season: int, round_number: int) -> Path:
     return PROCESSED_DIR / f"future_race_features_{season}_{round_number}.csv"
 
 
-def load_or_build_future_feature_file(season: int, round_number: int) -> pd.DataFrame:
+def load_or_build_future_feature_file(
+    season: int,
+    round_number: int
+) -> pd.DataFrame:
     path = future_feature_path(season, round_number)
 
     if path.exists():
@@ -196,6 +206,7 @@ def get_historical_actual_podium(race_df: pd.DataFrame) -> pd.DataFrame:
             "points",
         ]
     ]
+
 
 def show_prediction_outputs(
     ranked_df: pd.DataFrame,
@@ -240,7 +251,7 @@ def show_prediction_outputs(
     season = ranked_df["season"].iloc[0]
     round_number = ranked_df["round"].iloc[0]
 
-    st.subheader(f"📍 {race_name} ({season}, Round {round_number})")
+    st.subheader(f"{race_name} ({season}, Round {round_number})")
 
     if "race_date" in ranked_df.columns:
         st.caption(f"Race Date: {ranked_df['race_date'].iloc[0]}")
@@ -248,7 +259,7 @@ def show_prediction_outputs(
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### 🥇 Predicted Winner")
+        st.markdown("### Predicted Winner")
         winner_display = winner_df[
             [
                 "driver",
@@ -259,14 +270,20 @@ def show_prediction_outputs(
             ]
         ].copy()
 
-        winner_display["winner_probability"] = winner_display["winner_probability"].round(4)
-        winner_display["top3_probability"] = winner_display["top3_probability"].round(4)
-        winner_display["predicted_points"] = winner_display["predicted_points"].round(2)
+        winner_display["winner_probability"] = winner_display[
+            "winner_probability"
+        ].round(4)
+        winner_display["top3_probability"] = winner_display[
+            "top3_probability"
+        ].round(4)
+        winner_display["predicted_points"] = winner_display[
+            "predicted_points"
+        ].round(2)
 
         st.dataframe(winner_display, use_container_width=True)
 
     with col2:
-        st.markdown(f"### 🏁 Predicted Podium by {probability_view}")
+        st.markdown(f"### Predicted Podium by {probability_view}")
         podium_display = podium_df[
             [
                 "predicted_podium_position",
@@ -280,13 +297,19 @@ def show_prediction_outputs(
             ]
         ].copy()
 
-        podium_display["top3_probability"] = podium_display["top3_probability"].round(4)
-        podium_display["winner_probability"] = podium_display["winner_probability"].round(4)
-        podium_display["predicted_points"] = podium_display["predicted_points"].round(2)
+        podium_display["top3_probability"] = podium_display[
+            "top3_probability"
+        ].round(4)
+        podium_display["winner_probability"] = podium_display[
+            "winner_probability"
+        ].round(4)
+        podium_display["predicted_points"] = podium_display[
+            "predicted_points"
+        ].round(2)
 
         st.dataframe(podium_display, use_container_width=True)
 
-    st.markdown("### 🔢 Predicted Points Ranking")
+    st.markdown("### Predicted Points Ranking")
     points_display = points_df[
         [
             "predicted_points_rank",
@@ -302,16 +325,22 @@ def show_prediction_outputs(
 
     points_display["predicted_points"] = points_display["predicted_points"].round(2)
     points_display["top3_probability"] = points_display["top3_probability"].round(4)
-    points_display["winner_probability"] = points_display["winner_probability"].round(4)
+    points_display["winner_probability"] = points_display[
+        "winner_probability"
+    ].round(4)
 
     st.dataframe(points_display, use_container_width=True)
 
-    if historical and "finish_position" in ranked_df.columns and ranked_df["finish_position"].notna().any():
-        st.markdown("### 🏆 Actual Podium")
+    if (
+        historical
+        and "finish_position" in ranked_df.columns
+        and ranked_df["finish_position"].notna().any()
+    ):
+        st.markdown("### Actual Podium")
         actual_podium = get_historical_actual_podium(ranked_df)
         st.dataframe(actual_podium, use_container_width=True)
 
-    st.markdown(f"### 📊 Full Driver Ranking by {probability_view}")
+    st.markdown(f"### Full Driver Ranking by {probability_view}")
 
     ranking_display = ranked_df[
         [
@@ -329,7 +358,9 @@ def show_prediction_outputs(
 
     ranking_display["predicted_points"] = ranking_display["predicted_points"].round(2)
     ranking_display["top3_probability"] = ranking_display["top3_probability"].round(4)
-    ranking_display["winner_probability"] = ranking_display["winner_probability"].round(4)
+    ranking_display["winner_probability"] = ranking_display[
+        "winner_probability"
+    ].round(4)
 
     ranking_display = (
         ranking_display.sort_values(selected_prob_col, ascending=False)
@@ -339,10 +370,10 @@ def show_prediction_outputs(
     st.dataframe(ranking_display, use_container_width=True)
 
     chart_choice = st.radio(
-    "Chart View",
-    ["Top 3 Probability", "Winner Probability", "Predicted Points"],
-    horizontal=True,
-    key=chart_key
+        "Chart View",
+        ["Top 3 Probability", "Winner Probability", "Predicted Points"],
+        horizontal=True,
+        key=chart_key
     )
 
     if chart_choice == "Top 3 Probability":
@@ -352,7 +383,7 @@ def show_prediction_outputs(
     else:
         chart_col = "predicted_points"
 
-    st.markdown(f"### 📈 Driver Chart by {chart_choice}")
+    st.markdown(f"### Driver Chart by {chart_choice}")
     chart_df = ranked_df[["driver", chart_col]].copy().sort_values(
         chart_col,
         ascending=False
@@ -360,7 +391,7 @@ def show_prediction_outputs(
 
     st.bar_chart(chart_df.set_index("driver"))
 
-    st.markdown("### ℹ️ Prediction Views")
+    st.markdown("### Prediction Views")
     st.write(
         f"""
         The current ranking view is showing **{selected_prob_label}**.
@@ -380,7 +411,11 @@ def get_available_historical_races(model_table: pd.DataFrame) -> pd.DataFrame:
         .reset_index(drop=True)
     )
 
-def get_available_future_rounds(openf1_meetings: pd.DataFrame, season: int) -> list[int]:
+
+def get_available_future_rounds(
+    openf1_meetings: pd.DataFrame,
+    season: int
+) -> list[int]:
     if openf1_meetings.empty or "year" not in openf1_meetings.columns:
         return []
 
@@ -395,7 +430,10 @@ def get_available_future_rounds(openf1_meetings: pd.DataFrame, season: int) -> l
     return season_df["derived_round"].astype(int).tolist()
 
 
-def get_future_round_labels(openf1_meetings: pd.DataFrame, season: int) -> dict[int, str]:
+def get_future_round_labels(
+    openf1_meetings: pd.DataFrame,
+    season: int
+) -> dict[int, str]:
     if openf1_meetings.empty or "year" not in openf1_meetings.columns:
         return {}
 
@@ -417,6 +455,155 @@ def get_future_round_labels(openf1_meetings: pd.DataFrame, season: int) -> dict[
     return labels
 
 
+def image_to_base64(image_path: Path) -> str:
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode()
+
+def render_home_tab():
+    if not HOME_IMAGE_PATH.exists():
+        st.warning(f"Home page image not found: {HOME_IMAGE_PATH}")
+        return
+
+    image_base64 = image_to_base64(HOME_IMAGE_PATH)
+
+    html = f"""
+    <style>
+    @keyframes fadeInUp {{
+        from {{
+            opacity: 0;
+            transform: translateY(30px);
+        }}
+        to {{
+            opacity: 1;
+            transform: translateY(0);
+        }}
+    }}
+
+    body {{
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        font-family: Arial, sans-serif;
+        color: white;
+    }}
+
+    .hero-container {{
+        width: 100%;
+        height: 520px;
+        border-radius: 24px;
+        overflow: hidden;
+        background-image:
+            linear-gradient(rgba(5, 8, 15, 0.25), rgba(5, 8, 15, 0.88)),
+            url("data:image/jpg;base64,{image_base64}");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+        animation: fadeInUp 0.8s ease-out;
+    }}
+
+    .hero-content {{
+        padding: 30px;
+        animation: fadeInUp 1.1s ease-out;
+    }}
+
+    .hero-title {{
+        font-size: 48px;
+        font-weight: 800;
+        color: white;
+        line-height: 1.1;
+        white-space: nowrap;
+        text-shadow: 0 6px 24px rgba(0, 0, 0, 0.85);
+    }}
+
+    .hero-subtitle {{
+        font-size: 20px;
+        color: #e6e6e6;
+        max-width: 850px;
+        margin: 230px auto 0 auto;
+        line-height: 1.6;
+        text-shadow: 0 4px 18px rgba(0, 0, 0, 0.8);
+    }}
+
+    .home-section {{
+        max-width: 900px;
+        margin: 55px auto 0 auto;
+        text-align: center;
+        animation: fadeInUp 1.2s ease-out;
+    }}
+
+    .home-section h2 {{
+        font-size: 36px;
+        margin-bottom: 25px;
+    }}
+
+    .feature-grid {{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 25px;
+    }}
+
+    .feature-card {{
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 18px;
+        padding: 22px;
+        font-size: 17px;
+        transition: transform 0.25s ease, background 0.25s ease;
+    }}
+
+    .feature-card:hover {{
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.12);
+    }}
+
+    .home-callout {{
+        max-width: 900px;
+        margin: 35px auto 0 auto;
+        padding: 18px 22px;
+        border-radius: 16px;
+        background: rgba(231, 76, 60, 0.14);
+        border: 1px solid rgba(231, 76, 60, 0.35);
+        text-align: center;
+        font-size: 18px;
+        animation: fadeInUp 1.4s ease-out;
+    }}
+    </style>
+
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-title">Formula 1 Race Prediction App</div>
+            <div class="hero-subtitle">
+                Predict race winners, podium probability, and driver points using
+                historical performance, team strength, qualifying data, and future race features.
+            </div>
+        </div>
+    </div>
+
+    <div class="home-section">
+        <h2>What the App Does</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">Predicts <b>2025 race outcomes</b></div>
+            <div class="feature-card">Predicts <b>upcoming 2026 races</b></div>
+            <div class="feature-card">Estimates <b>Top-3 probability</b></div>
+            <div class="feature-card">Estimates <b>winner probability</b></div>
+            <div class="feature-card">Predicts <b>race points</b></div>
+            <div class="feature-card">Compares predictions with <b>actual results</b></div>
+        </div>
+    </div>
+
+    <div class="home-callout">
+        Choose the <b>2025 Prediction</b> or <b>2026 Prediction</b> tab above to view race predictions.
+    </div>
+    """
+
+    components.html(html, height=950, scrolling=False)
+
 def render_2025_tab(
     model_table,
     top3_model,
@@ -424,7 +611,7 @@ def render_2025_tab(
     points_model,
     probability_view,
 ):
-    st.header("🏁 2025 Race Prediction")
+    st.header("2025 Race Prediction")
     st.write("Analyze completed 2025 races and compare predictions with actual results.")
 
     historical_races = get_available_historical_races(model_table)
@@ -464,10 +651,10 @@ def render_2025_tab(
     )
 
     show_prediction_outputs(
-    ranked_df,
-    probability_view=probability_view,
-    historical=True,
-    chart_key="chart_view_2025"
+        ranked_df,
+        probability_view=probability_view,
+        historical=True,
+        chart_key="chart_view_2025"
     )
 
 
@@ -479,7 +666,7 @@ def render_2026_tab(
     points_model,
     probability_view,
 ):
-    st.header("🔮 2026 Upcoming Race Prediction")
+    st.header("2026 Upcoming Race Prediction")
     st.write("Predict upcoming 2026 races using the future feature pipeline.")
 
     selected_season = 2026
@@ -521,10 +708,10 @@ def render_2026_tab(
     )
 
     show_prediction_outputs(
-    ranked_df,
-    probability_view=probability_view,
-    historical=False,
-    chart_key="chart_view_2026"
+        ranked_df,
+        probability_view=probability_view,
+        historical=False,
+        chart_key="chart_view_2026"
     )
 
     st.info(
@@ -542,15 +729,6 @@ def render_2026_tab(
 
 
 def main():
-    st.title("🏎️ Formula 1 Race Prediction App")
-
-    st.markdown(
-        """
-        A production-style Formula 1 prediction application for race outcomes,
-        podium probability, winner probability, and predicted points.
-        """
-    )
-
     try:
         model_table = load_model_table()
         openf1_meetings = load_openf1_meetings()
@@ -561,51 +739,31 @@ def main():
         st.error(f"Startup error: {e}")
         st.stop()
 
-    probability_view = st.sidebar.radio(
-        "Probability View",
-        ["Top 3 Probability", "Winner Probability"]
-    )
+    # Tabs + Control in same row
+    col_tabs, col_controls = st.columns([4, 1])
 
-    st.sidebar.markdown("---")
-    st.sidebar.write("Use the tabs on the home page to switch between 2025 and 2026 predictions.")
+    with col_controls:
+        probability_view_ui = st.radio(
+            "",
+            ["Top 3", "Winner"],
+            horizontal=True,
+            key="main_probability_view"
+        )
 
-    tab_home, tab_2025, tab_2026 = st.tabs(
-    ["🏠 Home", "🏁 2025 Prediction", "🔮 2026 Prediction"]
-    )
+        # Map UI labels to your model labels
+        if probability_view_ui == "Top 3":
+            probability_view = "Top 3 Probability"
+        else:
+            probability_view = "Winner Probability"
 
+    with col_tabs:
+        tab_home, tab_2025, tab_2026 = st.tabs(
+            ["🏠 Home", "🏁 2025 Prediction", "🔮 2026 Prediction"]
+        )
+
+    # Tabs content
     with tab_home:
-        st.markdown(
-        """
-        <div style="text-align: center; padding: 30px 10px;">
-            <h1 style="font-size: 60px;">🏎️ Formula 1 Race Prediction App</h1>
-            <p style="font-size: 26px;">
-                A production-style Formula 1 prediction application for race outcomes,
-                podium probability, winner probability, and predicted points.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.image(
-        "https://images.unsplash.com/photo-1504707748692-419802cf939d",
-        caption="Formula 1 race car",
-        use_container_width=True
-    )
-
-    st.markdown(
-        """
-        ### What this app does
-
-        - Predicts **2025 race outcomes** using historical race data
-        - Predicts **upcoming 2026 races** using a future feature pipeline
-        - Estimates **Top-3 probability**
-        - Estimates **winner probability**
-        - Predicts **race points**
-        """
-    )
-
-    st.info("Choose the 2025 or 2026 tab above to view predictions.")
+        render_home_tab()
 
     with tab_2025:
         render_2025_tab(

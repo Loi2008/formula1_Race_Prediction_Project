@@ -25,4 +25,8 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 !data/processed/model_table.csv
+!data/processed/openf1_meetings.csv
+!data/processed/results.csv
+!data/processed/races.csv
+!data/processed/qualifying.csv
 
